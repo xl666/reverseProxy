@@ -6,6 +6,7 @@ services:
     container_name: reverse_proxy
     ports:
       - "443:80"
+      - "25:2222"
     volumes: 
       - ./config/nginx.conf:/etc/nginx/nginx.conf:ro
     
